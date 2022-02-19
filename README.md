@@ -25,8 +25,8 @@ Publish the website in the given URL.
 Publish the website in the given URL.
 
 ## PROGRAM :
-```
 ## area.html:
+```
 <!DOCTYPE html>
 <html>
 <head>
@@ -49,12 +49,14 @@ Publish the website in the given URL.
 </body>
 </html>
 ```
-```
+
 ## view.py:
+```
 from django.shortcuts import render
+```
 
 ## Create your views here.
-
+```
 def areacalculation(request):
 
     context = {}
@@ -70,8 +72,9 @@ def areacalculation(request):
         context[ 'b' ] = b
     return render(request,'mathapp/area.html',context)
 ```
-```
+
 ## urls.py:
+```
 from django.contrib import admin
 from django.urls import path
 from mathapp import views
@@ -84,6 +87,8 @@ urlpatterns = [
 ## OUTPUT:
 
 ### Home Page:
+![image](https://user-images.githubusercontent.com/94228215/154799406-2608e00f-4983-49cf-a0ec-0468d532e638.png)
+
 
 
 ## Result:
